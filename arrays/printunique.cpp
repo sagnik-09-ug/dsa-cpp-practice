@@ -10,11 +10,12 @@ int check(int arr[], int sz,int target){
 }
 int main ()
 {
-    int arr[]= {1,1,2,4,4,5,9,7,7,6};
-    int sz=10;
-    for(int i=0;i<sz;i++){
+    int arr[]={2,2,1};
+    int sz = 3;
+     for(int i =0;i<sz;i++){
         if(check(arr,sz,arr[i])<2){
-        cout<<arr[i]<<" ";}
+            cout<<arr[i]<<endl;
+        }
     }
     return 0 ;
 }

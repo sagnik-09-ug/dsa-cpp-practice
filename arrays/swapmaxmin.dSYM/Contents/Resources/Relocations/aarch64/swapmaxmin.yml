@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/nick/Desktop/dsa-cpp-practice/arrays/swapmaxmin'
+relocations:     []
+...
