@@ -1,21 +1,22 @@
+
 #include <iostream>
-using namespace std ;
-int check(int arr[], int sz,int target){
-    int flag=0;
-    for(int i=0;i<sz;i++){
-        if(arr[i]==target)
-        flag++;
+#include <vector>
+using namespace std;
+
+int singleNumber(vector<int>& nums) {
+    int ans = 0;
+
+    for (int i = 0; i < nums.size(); i++) {
+        ans = ans ^ nums[i];
     }
-    return flag;
+
+    return ans;
 }
-int main ()
-{
-    int arr[]={2,2,1};
-    int sz = 3;
-     for(int i =0;i<sz;i++){
-        if(check(arr,sz,arr[i])<2){
-            cout<<arr[i]<<endl;
-        }
-    }
-    return 0 ;
+
+int main() {
+    vector<int> nums = {4, 1, 2, 1, 2};
+
+    cout << "Single number: " << singleNumber(nums) << endl;
+
+    return 0;
 }
