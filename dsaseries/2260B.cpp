@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 int main() {
     int t;
     cin >> t;
@@ -17,7 +16,6 @@ int main() {
             i++;
         }
         sum += (k - i) * d;                // all remaining months give exactly d
-
         cout << sum << "\n";
     }
     return 0;
