@@ -7,8 +7,8 @@ vector<int> pairsum(vector<int> nums , int target){
     int i=0,j=n-1;
     while (i<j)
     {
-        int ps = nums[i]+nums[j];
-        if (ps>target) j--;
+        int ps = nums[i]+nums[j]; 
+        if (ps>target) j--;   
         else if (ps<target)i++;
         else {
             ans.push_back(i);
